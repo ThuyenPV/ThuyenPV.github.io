@@ -1,3 +1,9 @@
+---
+layout: post
+title: Lịch sử phát triển giao thức HTTP 3.0 và ứng dụng trong gRPC
+tags: [distributed system, networking]
+---
+
 Bài viết sẽ giới thiệu về lịch sử phát triển của giao thức HTTP, đặc biệt là HTTP/2 và ứng dụng của HTTP/2 trong giao thức gRPC.
 
 **Giới thiệu: gRPC là gì**
