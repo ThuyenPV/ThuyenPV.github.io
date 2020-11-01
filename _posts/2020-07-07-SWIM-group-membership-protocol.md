@@ -4,7 +4,7 @@ title: Paper review SWIM - a gossip protocol in distributed system
 subtitle: Scalable Weakly-consistent Infection-style Process Group Membership Protocol
 tags: [paper, distributed system, gossip]
 ---
-Paper [https://research.cs.cornell.edu/projects/Quicksilver/public_pdfs/SWIM.pdf](https://research.cs.cornell.edu/projects/Quicksilver/public_pdfs/SWIM.pdf)
+**Paper** [https://research.cs.cornell.edu/projects/Quicksilver/public_pdfs/SWIM.pdf](https://research.cs.cornell.edu/projects/Quicksilver/public_pdfs/SWIM.pdf)
 
 ### Tại sao cần tìm hiểu
 - Xem xét ứng dụng thực tiễn của Gossip protocol
