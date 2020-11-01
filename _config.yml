@@ -14,11 +14,12 @@ author: Huynh Quang Thao
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  Reading List: "readinglist"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Distributed System: "/distributed-system"
+    - Papers: "/papers"
+    - All: "/tags"
+  Medium Blog: "https://medium.com/@huynhquangthao"
 
 # --- Logo --- #
 
@@ -31,8 +32,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
-
+# title-img: "/assets/img/avatar-icon.png"
 
 # --- Footer social media links --- #
 
@@ -88,7 +88,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "distributed system, database, consensus, paper, networking, computer science"
 
 # --- Colours / background image --- #
 
