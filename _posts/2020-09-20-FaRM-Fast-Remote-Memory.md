@@ -2,7 +2,7 @@
 layout: post
 title: Paper review FaRM - Fast Access Memory
 subtitle: No compromises - distributed transactions with consistency, availability, and performance
-tags: [distributed system, networking]
+tags: [paper, distributed system, networking]
 ---
 
 **Paper** [https://dl.acm.org/doi/abs/10.1145/2815400.2815425](https://dl.acm.org/doi/abs/10.1145/2815400.2815425)
