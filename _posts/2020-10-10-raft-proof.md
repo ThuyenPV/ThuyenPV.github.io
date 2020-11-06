@@ -2,7 +2,7 @@
 layout: post
 title: Chứng minh các định lí trong thuật toán Raft
 subtitle:
-tags: [distributed system, consensus]
+tags: [distributed system, consensus, proof]
 ---
 
 Bài viết sẽ chứng minh lại 3 định lí quan trọng trong thuật toán Raft: Log Matching Property; Leader Completeness và State Machine Safety Property.
