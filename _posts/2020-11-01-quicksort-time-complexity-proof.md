@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chứng minh giải thuật QuickSort có độ phức tạp trung bình là O(NLogN)
+title: Chứng minh giải thuật QuickSort có độ phức tạp trung bình là NLogN
 tags: [algorithm, proof]
 use_math : true
 ---
