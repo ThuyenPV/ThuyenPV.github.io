@@ -2,7 +2,7 @@
 layout: post
 title: Chứng minh các định lí trong thuật toán Raft
 subtitle:
-tags: [distributed system, consensus, proof]
+tags: [distributed system, consensus, proof, raft]
 ---
 
 Bài viết sẽ chứng minh lại 3 định lí quan trọng trong thuật toán Raft: Log Matching Property; Leader Completeness và State Machine Safety Property.
@@ -28,7 +28,7 @@ Nếu 2 logs có ở một index bất kì có chung term, thì toàn bộ nhữ
 
 Định lí này dùng để làm gì ? Được apply ở định lí tiếp theo, nếu ta tìm được ít nhất một message mà chung index và term ở 2 log L1 và L2, nếu log ở L1 trước đó có một message M → log ở L2 cũng phải có một message M.
 
-![](/assets/img/2020-11-11/log_matching_property.png)
+![](/assets/img/2021-02-01/log_matching_property.png)
 
 ### Chứng minh
 
@@ -46,13 +46,13 @@ Nếu follower kiểm tra và không thấy log tại index đó có chung term 
 
 Ta có thể quan sát bằng các bước sau: 
 
-![](/assets/img/2020-11-11/request_AppendEntries_1.png)
+![](/assets/img/2021-02-01/request_AppendEntries_1.png)
 **Request AppendEntries 1: Remove first inconsistent logs**
 
-![](/assets/img/2020-11-11/request_AppendEntries_2.png)
+![](/assets/img/2021-02-01/request_AppendEntries_2.png)
 **Request AppendEntries 2: Remove  second inconsistent logs**
 
-![](/assets/img/2020-11-11/request_AppendEntries_3.png)
+![](/assets/img/2021-02-01/request_AppendEntries_3.png)
 **Request AppendEntries 3: Append all logs**
 
 Từ đó, ta có thể dễ dàng chứng minh định lí trên bằng quy nạp: với trường hợp khởi tạo, hiển nhiên đúng. Mỗi khi follower nhận được một request AppendEntries từ leader, follower sẽ kiểm tra và thường xuyên duy trì trạng thái consistent khi thêm vào một log.
@@ -81,7 +81,7 @@ Trong bài chứng minh, sẽ có 9 ý.  Tuy nhiên, ta có thể trình bày ng
 
 Giả sử một leader ở term T1 commit một log entry M, nhưng log entry đó không được lưu trữ lại ở một leader nào đó ở term tương lai. Không mất tính tổng quát, giả sử term T2 là term nhỏ nhất (T2 > T1) mà leader tại term đó không có lưu trữ log entry đấy. 
 
-![](/assets/img/2020-11-11/leader_completeness.png)
+![](/assets/img/2021-02-01/leader_completeness.png)
 
 Giả sử như trong hình là một system có 5 node.
 
@@ -119,7 +119,7 @@ Nói cách khác, một trong hai điều kiện sau phải thoả mãn:
 
     - Do vậy, leader T2 phải có độ dài log >= độ dài log của node S3. Và theo phát biểu của định lí **Log Matching**, leader T2 phải có ít nhất toàn bộ log của S3 (có thể nhiều hơn). Vì S3 có chứa message M đã commit, do vậy leader T2 cũng phải chứa message M đã commit → mâu thuẫn với điều giả thiết phản chứng là leader T2 không chứa message M.
 
-![](/assets/img/2020-11-11/leader_completeness_2.png)
+![](/assets/img/2021-02-01/leader_completeness_2.png)
 
 - **Điều kiện 1:** log entry cuối cùng của leader T2 có **term lớn hơn log entry cuối cùng của S3**. Điều kiện này sẽ được sử dụng cho chứng minh ở ý sau.
 
@@ -129,7 +129,7 @@ Nói cách khác, một trong hai điều kiện sau phải thoả mãn:
 
 - Theo giả thuyết phản chứng, term T2 (T2 > T1) là term nhỏ nhất sau term T1 mà leader tại term đó không có lưu trữ log entry M.  → như vậy, mọi leader trước T2 và sau T1 đều phải có message M. (2)
 
-![](/assets/img/2020-11-11/leader_completeness_3.png)
+![](/assets/img/2021-02-01/leader_completeness_3.png)
 
 - Leader T_1.5 là leader ngay trước Leader T2 mà tạo ra message M2. Theo như ý (1), M2 phải có term lớn hơn T1.  Dựa theo hình vẽ trên, ta thấy: 
     - Leader T_1.5 là leader ở term > T1 (nếu không sẽ không tạo ra được message M2 có term > T1)
