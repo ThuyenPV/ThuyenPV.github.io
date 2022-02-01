@@ -40,12 +40,12 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "fxtoken2022@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: thuyen_pham
+  # rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  facebook: https://www.facebook.com/profile.php?id=100009551655093
   github: ThuyenPV
-  twitter: ThuyenPV
-  patreon: ThuyenPV
-  youtube: c/ThuyenPV
+  twitter: https://twitter.com/ThuynPhm5
+  # patreon: ThuyenPV
+  # youtube: c/ThuyenPV
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
