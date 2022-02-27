@@ -6,19 +6,18 @@
 # --- Required options --- #
 
 # Name of website
-title: Moonaie
+title: Thuyen PV
 
 # Your name to show in the footer
-author: Thuyen Pham
+author: Thuyen PV
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
   Resources:
     - Top 100: "#"
     - Topics: "#"
-  Author's home: "#"
+  About me: "aboutme"
 
 # --- Logo --- #
 

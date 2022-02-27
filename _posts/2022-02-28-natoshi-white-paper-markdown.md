@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
+title: Sách trắng của Natoshi Nakamoto có gì ?
+subtitle: Bitcoin bắt đầu được thiết kế bởi Natoshi vào 2007 ...
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [books,blockchain,history]
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+Vào đầu những năm 2007 sự bất mãn về việc các nhà băng ngày càng chiếm nhiều quyền lực trong tiền tệ, kiểm soát danh tính, quản lý thông tin khách hàng ngày càng chặt chẽ đã dẫn đến cuộc biểu tình Cyperpunk tại phố Wall.
 
 **Here is some bold text**
 
